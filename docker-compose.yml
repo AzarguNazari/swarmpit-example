@@ -68,7 +68,7 @@ services:
     networks:
       - net
     deploy:
-      mode: global
+      replicas: 6
       labels:
         swarmpit.agent: 'true'
       resources:
